@@ -1,0 +1,4 @@
+{
+  "commands.name.set.success": "Changed %s's name to %s",
+  "commands.name.reset.success": "Reset %s's name to %s"
+}
