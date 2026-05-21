@@ -2,13 +2,13 @@
 # See https://maven.twelveiterations.com/service/rest/repository/browse/maven-public/net/blay09/mods/balm-common/
 balm = "26.1.0.6"
 
-minecraft = "26.1.2"
+minecraft = "26.1"
 
 # See https://projects.neoforged.net/neoforged/neoform
 neoForm = "26.1.2-1"
 
 # See https://projects.neoforged.net/neoforged/neoforge
-neoForge = "26.1.2.61-beta"
+neoForge = "26.1.0.19-beta"
 
 # See https://fabricmc.net/develop/
 # Bump fApi to 0.149.1+26.1.2
