@@ -40,7 +40,11 @@ public class NameChangeCommand {
     private static int set(ServerPlayer player, Component name, CommandContext<CommandSourceStack> context) {
         Component originalName = player.getName();
 
+        NameChanger.LOGGER.debug("Changing player's name from {} to {}", originalName, name);
+
         player.setCustomName(name);
+
+        NameChanger.LOGGER.debug("The player's name is now {} (custom name: {})", player.getName(), player.getCustomName());
 
         NameChanger.updateServerMotd(player);
 

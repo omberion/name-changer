@@ -36,6 +36,8 @@ public class NameChanger implements BalmModule {
     }
 
     public static void handleCopyFromEvent(@NonNull ServerPlayer oldPlayer, @NonNull ServerPlayer newPlayer) {
+        LOGGER.debug("Attempted to copy old player {} to new player {}", oldPlayer, newPlayer);
+
         newPlayer.setCustomName(oldPlayer.getCustomName());
     }
 
