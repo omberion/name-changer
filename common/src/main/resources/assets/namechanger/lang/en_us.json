@@ -1,4 +1,8 @@
 {
   "commands.name.set.success": "Changed %s's name to %s",
   "commands.name.reset.success": "Reset %s's name to %s"
+
+  "namechanger.configuration.title": "Name Changer Config",
+  "namechanger.configuration.nameConflictWarningEnabled": "Name Conflict Warning",
+  "namechanger.configuration.nameConflictWarningEnabled.tooltip": "Warns when a custom name causes a conflict with other players"
 }
