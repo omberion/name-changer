@@ -61,6 +61,16 @@ public class NameChangeCommand {
                                 context.getSource().getPlayerOrException(),
                                 context
                         )))
+                .then(Commands.literal("inspect")
+                        .then(Commands.argument("target", EntityArgument.player())
+                                .executes(context -> inspect(
+                                        EntityArgument.getPlayer(context, "target"),
+                                        context)
+                                ))
+                        .executes(context -> inspect(
+                                context.getSource().getPlayerOrException(),
+                                context
+                        )))
         );
     }
 
@@ -97,7 +107,7 @@ public class NameChangeCommand {
         if (nameConflict.isEmpty()) {
             return;
         }
-        
+
         NameConflict conflict = nameConflict.get();
 
         if (config.forbidNameConflicts) {
@@ -140,6 +150,23 @@ public class NameChangeCommand {
         NameChanger.updateServerMotd(player);
 
         context.getSource().sendSuccess(() -> Component.translatable("commands.name.reset.success", originalName, player.getName()), true);
+
+        return 1;
+    }
+
+    private static int inspect(ServerPlayer player, CommandContext<CommandSourceStack> context) {
+        String originalName = player.getGameProfile().name();
+        Component customName = player.getCustomName();
+
+        context.getSource().sendSystemMessage(Component.translatable("commands.name.inspect", getFeedbackDisplayName(player, false)));
+
+        context.getSource().sendSystemMessage(Component.translatable("commands.name.inspect.original_name", originalName));
+
+        if (customName != null) {
+            context.getSource().sendSystemMessage(Component.translatable("commands.name.inspect.custom_name", customName));
+        } else {
+            context.getSource().sendSystemMessage(Component.translatable("commands.name.inspect.custom_name.none"));
+        }
 
         return 1;
     }

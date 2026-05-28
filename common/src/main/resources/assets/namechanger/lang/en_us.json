@@ -5,6 +5,10 @@
   "commands.name.set.failed.conflict.original": "Cannot set name: %s is the original username of %s (%s).",
   "commands.name.set.failed.conflict.custom": "Cannot set name: %s (%s) already uses %s as their custom name.",
   "commands.name.reset.success": "Reset %s's name to %s",
+  "commands.name.inspect": "Inspecting %s:",
+  "commands.name.inspect.original_name": "- Original name: %s",
+  "commands.name.inspect.custom_name": "- Custom name: %s",
+  "commands.name.inspect.custom_name.none": "- No custom name",
 
   "namechanger.configuration.title": "Name Changer Config",
   "namechanger.configuration.nameConflictWarningEnabled": "Name Conflict Warning",
