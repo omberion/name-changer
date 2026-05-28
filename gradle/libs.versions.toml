@@ -11,7 +11,7 @@ neoForm = "26.1.2-1"
 neoForge = "26.1.0.19-beta"
 
 # See https://fabricmc.net/develop/
-fabricApi = "0.149.1+26.1.2"
+fabricApi = "0.150.0+26.1.2"
 fabricLoader = "0.19.2"
 
 # Is this needed?
