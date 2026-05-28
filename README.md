@@ -1,12 +1,12 @@
 # Name Changer
 
-A mod for changing the player’s name. Designed to replace the player’s name consistently across the game.
+A mod for changing a player’s name. Designed to replace the player’s name consistently across the game.
 
 Useful for roleplay servers, content creation, screenshots, or simply using a different display name without changing your account username.
 
-Needs to be installed both on the client and the server to work fully.
+Needs to be installed on both the client and the server for full functionality.
 
-Available on [Modrinth](https://modrinth.com/mod/namechanger)
+Available on [Modrinth](https://modrinth.com/mod/namechanger) for NeoForge and Fabric.
 
 ## Features
 
@@ -38,9 +38,9 @@ Custom names are stored per-world and persist between reloads.
 
 ## Names
 
-The custom name inputted in the `/name set` command is a text component. You can read more about them on the [Text Component](https://minecraft.wiki/w/Text_component_format#Java_Edition) page on the Minecraft Wiki.
+The custom name entered in the `/name set` command is a text component. You can read more about them on the [Text Component](https://minecraft.wiki/w/Text_component_format#Java_Edition) page on the Minecraft Wiki.
 
-Here's examples of using the `/name set` command:
+Here are examples of using the `/name set` command:
 
 **Plain text:**
 
