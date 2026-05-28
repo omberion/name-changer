@@ -83,6 +83,15 @@ public class NameChangeCommand {
     }
 
     private static void handleNameConflicts(ServerPlayer player, Component name, CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
+        NameChangerConfig config = Balm.config().getActiveConfig(NameChangerConfig.class);
+        assert config != null;
+
+        boolean shouldCheckNameConflicts = config.nameConflictWarningEnabled || config.forbidNameConflicts;
+
+        if (!shouldCheckNameConflicts) {
+            return;
+        }
+
         Optional<NameConflict> nameConflict = NameResolver.findFirstConflict(player, name);
 
         if (nameConflict.isEmpty()) {
@@ -90,9 +99,6 @@ public class NameChangeCommand {
         }
         
         NameConflict conflict = nameConflict.get();
-        NameChangerConfig config = Balm.config().getActiveConfig(NameChangerConfig.class);
-
-        assert config != null;
 
         if (config.forbidNameConflicts) {
             if (conflict.type().equals(NameConflict.ConflictType.ORIGINAL_NAME)) {
