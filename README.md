@@ -35,6 +35,7 @@ On top of that there's the `/name` command for changing the name, which requires
 
 - `/name set <target> <name>` sets the name of the target player
 - `/name reset [<target>]` resets the name of the target player (or self if target is omitted) to what it was originally
+- `/name inspect [<target>]` shows information about the player's name like their original and custom name
 
 Custom names are stored per-world and persist between reloads.
 
