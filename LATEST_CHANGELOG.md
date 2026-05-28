@@ -1,8 +1,6 @@
-# 1.1.0
-
-- Restructured the project into a Balm multiloader mod
-- Added NeoForge support
-- Updated CI artifact generation
-- Fixed runtime version consistency for 26.1
-- Updated Fabric API dependency
-- Various internal fixes and cleanup
+- Added a configuration system using Balm config API
+    - Added configurable warnings for conflicting player names
+    - Added configurable prevention of conflicting player names
+- Added the `/name inspect` command for viewing original and custom player names
+- Prioritized matching custom player names during command resolution
+- Updated and expanded the README documentation

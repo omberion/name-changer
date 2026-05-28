@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0
+
+- Added a configuration system using Balm config API
+    - Added configurable warnings for conflicting player names
+    - Added configurable prevention of conflicting player names
+- Added the `/name inspect` command for viewing original and custom player names
+- Prioritized matching custom player names during command resolution
+- Updated and expanded the README documentation
+
 ## 1.1.0
 
 - Restructured the project into a Balm multiloader mod
