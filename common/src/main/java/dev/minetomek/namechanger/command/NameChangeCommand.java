@@ -21,7 +21,6 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.permissions.Permissions;
 
-import java.util.Objects;
 import java.util.Optional;
 
 public class NameChangeCommand {
@@ -137,9 +136,7 @@ public class NameChangeCommand {
                     getFeedbackDisplayName(conflict.conflictingPlayer(), true),
                     name);
 
-            context.getSource().sendSystemMessage(warning.withColor(
-                    Objects.requireNonNull(ChatFormatting.YELLOW.getColor())
-            ));
+            context.getSource().sendSystemMessage(warning.withStyle(ChatFormatting.YELLOW));
         }
     }
 
