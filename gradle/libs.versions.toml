@@ -1,21 +1,21 @@
 [versions]
 # See https://maven.twelveiterations.com/service/rest/repository/browse/maven-public/net/blay09/mods/balm-common/
-balm = "26.1.0.6"
+balm = "26.2.0.1"
 
-minecraft = "26.1"
+minecraft = "26.2"
 
 # See https://projects.neoforged.net/neoforged/neoform
-neoForm = "26.1.2-1"
+neoForm = "26.2-1"
 
 # See https://projects.neoforged.net/neoforged/neoforge
-neoForge = "26.1.0.19-beta"
+neoForge = "26.2.0.0-beta"
 
 # See https://fabricmc.net/develop/
-fabricApi = "0.150.0+26.1.2"
-fabricLoader = "0.19.2"
+fabricApi = "0.152.1+26.2"
+fabricLoader = "0.19.3"
 
 # Is this needed?
-kuma = "26.1.2.2"
+kuma = "26.2.0.1"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
